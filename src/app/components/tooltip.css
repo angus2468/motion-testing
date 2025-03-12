@@ -1,0 +1,23 @@
+.tooltip-container {
+  position: relative;
+}
+.tooltip-children {
+  position: relative;
+}
+.tooltip {
+  position: absolute;
+  bottom: -70%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6b6d6e;
+  border: solid white 2px;
+  padding: 5px;
+  width: max-content;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+}
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
